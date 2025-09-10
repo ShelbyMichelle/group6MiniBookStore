@@ -1,8 +1,5 @@
-package org.example.group6minibookstore;
-
-import org.example.group6minibookstore.model.UserModel;
+import model.UserModel;
 import org.example.group6minibookstore.entities.User;
-import org.example.group6minibookstore.model.UserModel;
 
 import java.util.List;
 
