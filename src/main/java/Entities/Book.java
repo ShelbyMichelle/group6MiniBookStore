@@ -1,48 +1,37 @@
 package Entities;
 
-import jakarta.persistence.*;
-
-@Entity
-@Table (name = "book")
 public class Book {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    @Column(name = "name")
-    private String name;
+    private int id;
+    private String title;
+    private String author;
     private double price;
 
-    public Book(Long id, String name, double price) {
+    public Book(int id, String title, String author, double price) {
         this.id = id;
-        this.name = name;
+        this.title = title;
+        this.author = author;
         this.price = price;
     }
 
-    public Book() {
+    public int getId() { return id; }
+    public String getTitle() { return title; }
+    public String getAuthor() { return author; }
 
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getPrice() {
-        return price;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     public void setPrice(double price) {
         this.price = price;
     }
+
+    public double getPrice() { return price; }
 }

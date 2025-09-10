@@ -1,4 +1,4 @@
-package org.example.group6minibookstore.entities;
-
-public class orders {
-}
+//package org.example.group6minibookstore.entities;
+//
+//public class orders {
+//}
