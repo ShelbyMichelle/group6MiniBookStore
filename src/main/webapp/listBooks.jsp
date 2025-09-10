@@ -9,12 +9,22 @@
 <html>
 <head>
     <title>Book List</title>
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
+<div id="navigation">
 <h1>Hello Welcome Home <%= session.getAttribute("username") %> </h1>
-<a href="logout">Logout</a>
-<% Book book = (Book) request.getAttribute("Book"); %>
-<h4>Book id <%= book.getId() %></h4>
-<h6>Book name <%= book.getName() %></h6>
+<ul>
+    <ul>
+        <li><a href="listBooks.jsp">Home</a></li>
+        <li><a href="orders.jsp">Orders</a></li>
+        <li><a href="cart.jsp">Cart</a></li>
+        <li><a href="logout">Logout</a></li>
+    </ul>
+</ul>
+</div>
+<%--<% Book book = (Book) request.getAttribute("Book"); %>--%>
+<%--<h4>Book id <%= book.getId() %></h4>--%>
+<%--<h6>Book name <%= book.getName() %></h6>--%>
 </body>
 </html>

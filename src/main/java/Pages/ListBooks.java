@@ -1,5 +1,6 @@
 package Pages;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,6 +23,8 @@ public class ListBooks extends HttpServlet {
         }
         else {
             resp.sendRedirect("listBooks.jsp");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/listBooks.jsp");
+            dispatcher.include(req, resp);
         }
     }
 

@@ -9,8 +9,20 @@
 <html>
 <head>
     <title>Admin Books</title>
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-<h1>Admin Book Management</h1>
+
+<div id="navigation">
+    <h1>Admin Book Management</h1>
+    <ul>
+        <ul>
+            <li><a href="listBooks.jsp">Home</a></li>
+            <li><a href="orders.jsp">Orders</a></li>
+            <li><a href="cart.jsp">Cart</a></li>
+            <li><a href="logout">Logout</a></li>
+        </ul>
+    </ul>
+</div>
 </body>
 </html>

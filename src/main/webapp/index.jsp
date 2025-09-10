@@ -2,12 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>ONLINE BOOKSTORE</title>
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-<h1><%= "Hello World!" %>
+<h1><%= "WELCOME TO THE ONLINE BOOKSTORE" %>
 </h1>
 <br/>
-<a href="hello-servlet">Hello Servlet</a>
+<a href="login.jsp">log In</a>
 </body>
 </html>

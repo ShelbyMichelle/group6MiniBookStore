@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Log in</title>
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 <h1>Welcome Back, Please enter your details to Login</h1>

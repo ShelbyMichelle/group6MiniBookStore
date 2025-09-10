@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>register</title>
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 <h1>Welcome, Please enter your details to register</h1>
@@ -18,9 +19,9 @@
     <label for="password">password</label><br>
     <input type="password" name="password" id="password"><br>
     <label>Role</label><br />
-    <input type="checkbox" name="role" id="Admin" value="Admin">
+    <input type="radio" name="role" id="Admin" value="Admin">
     <label for="Admin">Admin</label>
-    <input type="checkbox" name="role" id="Customer" value="Customer">
+    <input type="radio" name="role" id="Customer" value="Customer">
     <label for="Customer">Customer</label> <br />
     <input type="submit" id="button">
     <p>Already have an account? <a href="login.jsp">Login</a></p>
