@@ -1,4 +1,4 @@
-package org.example.group6minibookstore.utils;
+package utils;
 
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;

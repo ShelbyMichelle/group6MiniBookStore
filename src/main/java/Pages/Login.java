@@ -1,5 +1,7 @@
 package Pages;
 
+import model.UserModel;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,11 +17,12 @@ public class Login extends HttpServlet {
     private String password = "12345";
     private String role = "customer";
     private int userid = 1;
+    UserModel model = new UserModel();
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        this.username = username;
-        this.password = password;
+//        this.username = model.getUsers();
+//        this.password = password;
         this.role = role;
         this.userid = userid;
 
@@ -27,6 +30,7 @@ public class Login extends HttpServlet {
         String password = req.getParameter("password");
 //        String role = req.getParameter("role");
 //        int userid = Integer.parseInt(req.getParameter("userid"));
+        System.out.println(model.login(username, password));
 
         if (role.equals("customer")) {
             HttpSession session = req.getSession();

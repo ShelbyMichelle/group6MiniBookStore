@@ -1,8 +1,8 @@
-package org.example.group6minibookstore.model;
+package model;
 
 import jakarta.persistence.criteria.CriteriaDelete;
 import org.example.group6minibookstore.entities.User;
-import org.example.group6minibookstore.utils.HibernateUtil;
+import utils.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
